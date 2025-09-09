@@ -1,8 +1,8 @@
 #include <iostream>  
-using namespace std;  //using standard namespace
+using namespace std;
 void change(int *data);  
-int main()  //main function 
-{  
+int main() 
+{
 int data = 8;  
 change(&data);  
 cout << "The value of the data is: " << data<< endl;  
