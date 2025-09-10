@@ -21,9 +21,9 @@ int main() {
     int n = sizeof(a) / sizeof(a[0]);
 
     int ans = binarySearch(a, 0,n-1, k);
-    if (ans ==-1)
-        cout << "Element not found : " << endl;
+    if (ans!=-1)
+          cout << "Element found at index: " <<ans<<endl;
     else
-        cout << "Element found at index: " <<ans<<endl;
+        cout << "Element not found " <<endl;
 
-}
+}  
