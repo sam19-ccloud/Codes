@@ -12,7 +12,7 @@ int binarySearch(int a[], int beg, int end, int k) {
         else
             return binarySearch(a, beg,mid-1, k); 
         }
-            return -1;
+        return -1;
 }
 
 int main() {
