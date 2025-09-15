@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+  
 void createArray(int **p, int size) {
     *p = (int *)malloc(sizeof(int) * size);
     if (*p == NULL) {
