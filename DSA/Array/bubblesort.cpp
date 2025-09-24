@@ -34,6 +34,7 @@ int main() {
     int a[n]; 
     cout << "Enter the elements of the array: " << endl;
     for (int i = 0; i < n; i++) {
+
         cin>>a[i]; 
     }
 
@@ -42,6 +43,6 @@ int main() {
     
     bubble(a, n);
     
-    cout << "\nAfter sorting array elements are: " << endl;      
+    cout << "\ sorting array elements are: " << endl;      
     print(a, n);    
 }

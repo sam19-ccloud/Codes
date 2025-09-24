@@ -16,8 +16,8 @@ class Student {
          id=i;
         name=n;
     }
-    // functionalities / member functions/
-    void insert(int i,string n){
+    // functionalities / member functions/ inside member function
+    void insert(int i,string n) {
         id=i;
         name=n;
     }
@@ -33,18 +33,17 @@ Student s1;
 // s1.insert(101,"jhon");
 Student s2;
 Student s3;
-// s2.insert(102,"jane");
+s2.insert(102,"jane");
 
-// s1.show();
-// s2.show();
+s1.show();
+s2.show();
 
 // Student s1 = Student(101,"jhon");
 // s1.insert(101,"jhon");
 // Student s2 = Student(102,"Jane");
 // s2.insert(102,"jane");
 
-// s1.show();
-// s2.show();
+
 
 
 
