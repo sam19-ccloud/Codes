@@ -12,8 +12,8 @@ int binarySearch(int a[], int beg, int end, int val)
 {    
     int mid;    
     if(end >= beg)     
-    {        mid = (beg + end)/2;    
-/* if the item to be searched is present at middle */  
+    {  mid = (beg + end)/2;    
+/* if the  item to be searched is present at middle */  
         if(a[mid] == val)    
         {                 
             return mid+1;    
