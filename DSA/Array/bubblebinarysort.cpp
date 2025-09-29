@@ -71,10 +71,10 @@ int main(){
     int val = 14;
     int res = binarySearch(a, 0, n-1, val);
 
-    cout<<"Element to be searched is: "<<val<<endl;
+    cout<<"Element to be searched is:  "<<val<<endl;
     if (res == -1)  
     
-    cout<<"Element is not present in the array"<<endl;
+    cout<<"Element is not present in the array "<<endl;
     else  
     cout<<"Element is  present at " <<res<<"position of array"<<endl;  
 }

@@ -43,6 +43,6 @@ int main() {
     
     bubble(a, n);
     
-    cout << "\ sorting array elements are: " << endl;      
+    cout << "sorting array elements are: " << endl;      
     print(a, n);    
 }
