@@ -21,8 +21,8 @@ class Student{
 };
 
 int main(){
-Student s1;
 
+Student s1;
 cout<<&s1;
 s1.insert(101,90.5,"harry");
 s1.show();
