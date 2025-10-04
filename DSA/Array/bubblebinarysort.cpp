@@ -38,7 +38,7 @@ int binarySearch(int a[], int beg, int end, int val)
    bool isSwapped = false;  
    for(i = 0; i < n; i++){     
       isSwapped = false;  
-      for(j = 0; j < n - i - 1; j++)    {      
+      for(j = 0; j < n - i - 1; j++){      
             if(a[j] > a[j + 1])    {     
                 isSwapped = true;  
                 temp = a[j];      
