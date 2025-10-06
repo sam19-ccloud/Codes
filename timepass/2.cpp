@@ -22,5 +22,5 @@ public:
 int main() {
     Number obj; 
     obj.even_odd();    
-
+    return 0;
 }
