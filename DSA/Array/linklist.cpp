@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
 
-// Function to create a new array dynamically
 void createArray(int *&arr, int &size) {
     cout << "Enter Size: ";
     cin >> size;
     
-    // Allocate memory dynamically
+     
     arr = new int[size];
 
     for (int i = 0; i < size; i++) {
@@ -17,7 +16,7 @@ void createArray(int *&arr, int &size) {
     cout << "Array created successfully...\n";
 }
 
-// Function to display the array
+ 
 void displayArray(int *arr, int size) {
     if (arr == NULL || size == 0) {
         cout << "Array is empty.\n";
@@ -31,9 +30,9 @@ void displayArray(int *arr, int size) {
     cout << endl;
 }
 
-// Main function
+ 
 int main() {
-    int *p = NULL; // Pointer to array
+    int *p = NULL;  
     int size = 0;
     int ch;
 
@@ -57,7 +56,7 @@ int main() {
                 break;
             case 6:
                 cout << "Exiting program.\n";
-                delete[] p; // Free memory before exiting
+                delete[] p;  
                 return 0;
             default:
                 cout << "Invalid choice or feature not implemented yet.\n";
