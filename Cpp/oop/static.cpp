@@ -18,7 +18,7 @@ class Vehicle{
     }
     void display(){
         
-        cout<<"Vehname: "<<vehname<<endl;
+        cout<<"Vehname: "<<vehname<<endl;             
         cout<<"Vehno: "<<vehno<<endl;
     }
 };
