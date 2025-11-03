@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Welcome, <span id="userName"></span>!</h1>
+    <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    // Load user data
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      // No user found, redirect to login
+      window.location.href = 'login.html';
+    } else {
+      document.getElementById('userName').textContent = user.name;
+      document.getElementById('userEmail').textContent = user.email;
+    }
+
+    // Logout functionality
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('user');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

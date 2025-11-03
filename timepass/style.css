@@ -1,0 +1,117 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+#hero {
+    background: #80e1a8;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+#hero .buttons button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#hero .buttons button:hover {
+    background: #45a049;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#about {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+#features {
+    background: #f9f9f9;
+}
+
+#contact {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
