@@ -1,36 +1,36 @@
 #include <iostream>  
 using namespace std;  
-class A // Base class  
+class A  
     {  
 public:  
-int x, y; // data members  
-void getdata() // to input x and y  
+int x, y;  
+void getdata()  
     {  
 cout<< "Enter value of x and y:\n";  
 cin>> x >> y;  
     }  
 };  
-class B : public A //B is derived from class base  
+class B : public A    
 {  
 public:  
 void product()  
     {  
-cout<< "\nProduct= " << x * y <<endl; // Perform product  
+cout<< "\nProduct= " << x * y <<endl;  
     }  
 };  
-class C : public A //C is also derived from class base  
+class C : public A  
 {  
 public:  
 void sum()  
     {  
-cout<< "\nSum= " << x + y; // Perform sum  
+cout<< "\nSum= " << x + y;  
     }  
 };  
 int main()  
 {  
-    B obj1; //object of derived class B  
-    C obj2; //object of derived class C  
-obj1.getdata(); // input x and y   
+    B obj1;   
+    C obj2;   
+obj1.getdata();    
 obj1.product();  
 obj2.getdata();  
 obj2.sum();  
