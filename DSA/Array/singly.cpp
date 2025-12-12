@@ -25,3 +25,4 @@ int main() {
         cout << "\n\n********* MAIN MENU *********\n";
         cout << "1. Insert at Beginning\n";
         cout << "2. Insert at Last\n";
+    }

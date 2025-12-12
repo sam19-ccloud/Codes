@@ -20,3 +20,4 @@ void displayArray(int *arr, int size) {
         cout << "Array is empty.\n";
         return;
     }
+}
