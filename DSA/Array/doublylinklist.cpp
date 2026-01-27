@@ -12,7 +12,7 @@ public:
 };  
 //  Doubly Linked List Class  
 class DoublyLinkedList {  
-private:  
+    private:  
     Node* head;  
     Node* tail;  
     // Helper to print operation status  
