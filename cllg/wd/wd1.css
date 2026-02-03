@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  animation: bgChange 1s ease-in-out infinite alternate;
+}
+
+/* Keyframes = corporate-approved automation */
+@keyframes bgChange {
+  from {
+    background-color: #0f172a; /* dark blue */
+  }
+  to {
+    background-color: #22c55e; /* green */
+  }
+}
+h1 {
+
+  color: navy;
+  margin-left: 20px;
+  background-color:DodgerBlue;
+  border:3px solid violet;
+}
+
+p{ color: white;
+background-color:Tomato;
+border:3px solid black;
+}
+
