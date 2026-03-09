@@ -50,12 +50,20 @@ class AVL
 	{
 		NODE *Aptr;
 		Aptr = Pptr->LC;
-		Pptr->LC = rr_rotate(Pptr);
+		Pptr->LC = rrrotate(Pptr);
 		cout<<"Left-Right Rotation";
-		return ll_rotate(Pptr);	
+		return llrotate(Pptr);	
+	}
+	
+	NODE *rlrotate(NODE* Pptr)
+	{
+		NODE *Aptr;
+		Aptr = Pptr->RC;
+		Pptr->RC = lrrotate(Pptr);
+		cout<<"Right-Left Rotation";
+		return rrrotate(Pptr);	
 	}
 	
 	
-	
    
-    
+};
