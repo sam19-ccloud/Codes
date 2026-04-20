@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive JavaScript Page</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+    button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Welcome to My Interactive Page</h1>
+
+<p id="demo">Click buttons to interact!</p>
+
+<!-- Buttons -->
+<button onclick="changeText()">Change Text</button>
+<button onclick="showAlert()">Show Alert</button>
+<button onclick="changeColor()">Change Background</button>
+
+<!-- Input Form -->
+<h3>Enter Your Name:</h3>
+<input type="text" id="name">
+<button onclick="validate()">Submit</button>
+
+<script>
+
+// Function
+function changeText() {
+  document.getElementById("demo").innerHTML = "Text Changed!";
+}
+
+// Alert Function
+function showAlert() {
+  alert("Hello! This is JavaScript Alert.");
+}
+
+// DOM + Event
+function changeColor() {
+  document.body.style.backgroundColor = "lightgreen";
+}
+
+// Form Validation
+function validate() {
+  let name = document.getElementById("name").value;
+
+  if (name == "") {
+    alert("Please enter your name!");
+  } else {
+    alert("Welcome " + name);
+  }
+}
+
+// Loop Example
+for (let i = 1; i <= 3; i++) {
+  console.log("Loop Count: " + i);
+}
+
+// Array Example
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits[0]);
+
+// Object Example
+let student = {
+  name: "Rahul",
+  age: 20
+};
+console.log(student.name);
+
+</script>
+
+</body>
+</html>

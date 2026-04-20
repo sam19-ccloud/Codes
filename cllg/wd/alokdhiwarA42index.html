@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My JavaScript Fun Page</title>
+  <style>
+    body {
+      font-family: Verdana;
+      text-align: center;
+      background-color: #ffe4e1;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 8px;
+      background-color: navy;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input {
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>JavaScript Activity Page</h1>
+
+<p id="text">Try different actions below!</p>
+
+<!-- Buttons -->
+<button onclick="updateText()">Update Text</button>
+<button onclick="showMessage()">Show Message</button>
+<button onclick="randomColor()">Random Background</button>
+
+<!-- Form -->
+<h3>Enter Your Age:</h3>
+<input type="number" id="age">
+<button onclick="checkAge()">Check</button>
+
+<script>
+
+// Function + DOM
+function updateText() {
+  document.getElementById("text").innerHTML = "Content Updated Successfully!";
+}
+
+// Alert Function
+function showMessage() {
+  alert("Welcome to JavaScript Learning!");
+}
+
+// Random Color Function
+function randomColor() {
+  let colors = ["lightblue", "lightyellow", "lightpink", "lightgray"];
+  let random = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = random;
+}
+
+// Conditional + Form Validation
+function checkAge() {
+  let age = document.getElementById("age").value;
+
+  if (age == "") {
+    alert("Please enter your age!");
+  } else if (age >= 18) {
+    alert("You are eligible!");
+  } else {
+    alert("You are not eligible!");
+  }
+}
+
+// Loop Example
+let i = 1;
+while (i <= 3) {
+  console.log("Number: " + i);
+  i++;
+}
+
+// Array Example
+let subjects = ["Math", "Science", "English"];
+console.log(subjects[1]);
+
+// Object Example
+let person = {
+  name: "Amit",
+  city: "Delhi"
+};
+console.log(person.city);
+
+</script>
+
+</body>
+</html>

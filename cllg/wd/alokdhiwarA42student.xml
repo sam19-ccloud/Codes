@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student2.xsl"?>
+
+<college>
+    <record>
+        <roll>101</roll>
+        <id>ST201</id>
+        <name>
+            <first>Neha</first>
+            <last>Verma</last>
+        </name>
+        <birthdate>2004-02-15</birthdate>
+        <gender>Female</gender>
+        <contact>
+            <email>neha@example.com</email>
+        </contact>
+        <academic>
+            <branch>EXTC</branch>
+            <division>C</division>
+            <year>2</year>
+        </academic>
+    </record>
+
+    <record>
+        <roll>102</roll>
+        <id>ST202</id>
+        <name>
+            <first>Arjun</first>
+            <last>Mehta</last>
+        </name>
+        <birthdate>2003-11-30</birthdate>
+        <gender>Male</gender>
+        <contact>
+            <email>arjun@example.com</email>
+        </contact>
+        <academic>
+            <branch>Mechanical</branch>
+            <division>A</division>
+            <year>3</year>
+        </academic>
+    </record>
+</college>
